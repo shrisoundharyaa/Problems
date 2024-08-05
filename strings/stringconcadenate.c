@@ -25,6 +25,7 @@ int main(){
     for(int i = 0; i <= len2; i++){
         str1[len1 + i] = str2[i];
     }
+    str[len +len2] = '\0';
     
     // Print the concatenated string
     printf("%s", str1);
