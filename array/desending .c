@@ -15,6 +15,7 @@ int main(){
                 arr[j] = a;
             }
         }
+        
     }
     
     for(int i=0;i<n;++i){
