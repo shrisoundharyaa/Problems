@@ -12,8 +12,7 @@ int main(){
     int count =0;
     
    while(tok != NULL){
-       
-       word[count++] = tok;
+     word[count++] = tok;
       tok = strtok(NULL," ,.");
    }
  

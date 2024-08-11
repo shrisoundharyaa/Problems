@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<ctype.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    getchar();
+    char str[n][100];
+    for(int i=0;i<n;i++){
+        fgets(str[i],sizeof(str[i]),stdin);
+        str[i][strcspn(str[i],"\n")] = 0;
+    }
+    
+    char frist[100];
+    scanf("%s",frist);
+   
+    char second[100];
+    scanf("%s",second);
+    int fstn =0;
+    int secd = 0;
+    int found1 = 0;
+    int found2 = 0;
+    for(int i=0;i<n;i++){
+        if(strcmp(str[i],frist)==0){
+            fstn = i;
+            found1 =1;
+        }
+        if(strcmp(str[i],second)==0){
+            secd = i;
+            found2=1;
+        }
+    }
+    if(found1 ==1 && found2 == 1 ){
+        int index = secd - fstn;
+      printf("%d",index);
+    }
+    else{
+        printf("their is no words");
+    }
+   
+    
+}
