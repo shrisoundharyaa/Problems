@@ -9,6 +9,7 @@ bool areIsomorphic(char* str1, char* str2) {
     // If lengths of both strings are not the same, they cannot be isomorphic
     if (len1 != len2)
         return false;
+        
 
     // Create two frequency arrays initialized to -1
     int freq1[256], freq2[256];

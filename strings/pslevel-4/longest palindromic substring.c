@@ -9,6 +9,7 @@ int isPalindrome(char s[], int i, int j){
         i++;
         j--;
     }
+    
     return 1;
 }
 
