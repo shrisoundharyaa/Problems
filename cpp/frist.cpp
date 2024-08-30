@@ -1,37 +1,14 @@
-#include<iostream>
-using namespace std;
-
-int main(){
-    int x , y;
-    cin >> x >> y;
-    cout<< "value of x: " << x << " and y: "<< y;
-}
-
-
-
-
-
-
-
-
 // #include<iostream>
 // using namespace std;
-
 // int main(){
-//     cout<<"hello sound"<<endl;
-//     cout<<"heeloo";
+//     cout <<"hi sound"<<endl<<"hello everyone";
 // }
 
+#include<bits/stdc++.h>
 
-
-
-
-
-
-
-// #include<iostream>
-
-// int main(){
-//     std::cout<<"hello sound"<<"\n";
-//     std::cout<<"heeloo";
-// }
+using namespace std;
+int main(){
+    int x;
+    cin >> x;
+    cout <<  x;
+}
